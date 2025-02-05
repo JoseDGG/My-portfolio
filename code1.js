@@ -1,2 +1,0 @@
-var world
-var code

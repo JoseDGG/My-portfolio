@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Portfolio of Jose David Garcia, a software developer in training with Oracle.">
+    <meta name="keywords" content="portfolio, software developer, Java, HTML, CSS, JavaScript">
+    <title>Jose David Garcia - Portfolio</title>
     <link rel="stylesheet" href="styles/Home.css"> 
 </head>
 <body>
-    <script src="code1.js"></script>
     <header class="header">
         <nav class="header__menu">
             <a class="header__menu__link" href="index.html">Home</a>
@@ -17,33 +18,66 @@
             <!-- falta incorpar un enlace para el idioma-->
         </nav>
     </header>
-    <main class="presentacion">
-        <section class="presentacion__contenido">
-            <h1 class="presentacion__contenido__titulo">
-                Mi portafolio, 
-                <strong class="Titulo-destaque">descubre acerca de mi</strong>
-            </h1>
-            <p class="presentacion__contenido__parrafo">
-                ¡Hola! Soy Jose David García, aprendiz en programación con Oracle y Alura.
-            </p>
-            <div class="presentacion__contenido__enlaces">
-                <h2 class="presentacion__contenido__enlaces__texto">
-                    Accede a mis redes:
-                </h2>
-                <a class="presentacion__contenido__enlaces__link" href="https://www.instagram.com/davidgarcia09/">
-                    <img src="assets/instagram.png">
-                    Instagram</a>
-                <a class="presentacion__contenido__enlaces__link" href="https://github.com/JoseDGG">
-                    <img src="assets/github.png">
-                    GitHub</a>
+    <main class="presentation">
+        <section class="presentation__content">
+            <div class="main__info">
+                <h1 class="presentation__content__title">
+                    Welcome to my portfolio, 
+                    <strong class="title-highlight">Discover more about me</strong>
+                </h1>
+                <p class="presentation__content__paragraph">
+                    Hi! I'm Jose David Garcia, a software development student with Oracle and Alura.
+                </p>
+                <div class="presentation__content__links">
+                    <h2 class="presentation__content__links__text">
+                        Connect with me:
+                    </h2>
+                    <a class="presentation__content__links__link" href="https://www.instagram.com/davidgarcia09/">
+                        <img src="assets/instagram.png">
+                        Instagram</a>
+                    <a class="presentation__content__links__link" href="https://github.com/JoseDGG">
+                        <img src="assets/github.png">
+                        GitHub</a>
+                </div>
             </div>
-            <!-- buenas, esto es un comentario en html-->
+            <img class="photo__of__mine" src="assets/Low quality white background.jpg" alt="Photo of Jose David Garcia Garcia">
         </section>
-        <img class="foto__yo" src="assets/Low quality white background.jpg" alt="Imagen de Ana García Trabajando">
+
+        <section class="projects">
+            <h2 class="projects__title">My Projects</h2>
+            <div class="projects__list">
+                <a class="projects__link" href="https://github.com/JoseDGG/forohub">
+                    <img src="assets/books.png" alt="Forohub">
+                    <p>ForoHub</p>
+                    <span class="tooltip">ForoHub.
+                        A forum application with user authentication and discussions.</span>
+                </a>
+                <a class="projects__link" href="https://github.com/JoseDGG/conversor-moneda-api">
+                    <img src="assets/money-exchange.png" alt="Currency Converter API">
+                    <p>Currency Converter API</p>
+                    <span class="tooltip">Converts between multiple currencies using real-time rates.</span>
+                </a>
+                <a class="projects__link" href="https://github.com/JoseDGG/catalogo-libros-api-sql">
+                    <img src="assets/books.png" alt="Catalogue of books">
+                    <p>Catalogue of Books</p>
+                    <span class="tooltip">A book cataloging API that allows adding, updating, and searching books.</span>
+                </a>
+                <a class="projects__link" href="https://github.com/JoseDGG/EncriptadorDeTexto">
+                    <img src="assets/books.png" alt="Text Encryptor">
+                    <p>Text Encryptor</p>
+                    <span class="tooltip">Encrypt and decrypt text messages using a simple algorithm.</span>
+                </a>
+                <a class="projects__link" href="https://github.com/JoseDGG/JuegoNumeroSecreto">
+                    <img src="assets/books.png" alt="Secret Number Game">
+                    <p>Secret Number Game</p>
+                    <span class="tooltip">A number guessing game with random number generation.</span>
+                </a>
+            </div>
+            
+        </section>
     </main>
     <footer class="footer">
-        Desarrollado por Deyvid343
+        2025 - Jose David Garcia Garcia
     </footer>
 </body>
 </html>
-

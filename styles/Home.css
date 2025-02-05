@@ -47,38 +47,46 @@ body{
     text-decoration: none;
 }
 
-.presentacion{
-    padding: 5% 15%;
+.presentation{
+    padding: 5% 10%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     gap: 82px;
 
 }
 
+.presentation__content{
+    padding: 0% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
 
-.presentacion__contenido{
+.main__info{
     width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
-.presentacion__contenido__titulo{
+.presentation__content__title{
     font-size: 2rem;
     font-family: var(--font-krona);
 }
 
-.Titulo-destaque{
+.title-destaque{
     color:var(--color-terciary);
 }
 
-.presentacion__contenido__parrafo{
+.presentation__content__paragraph{
     font-family: var(--font-montserrat);
     font-size: 1.5rem;
 }
 
-.presentacion__contenido__enlaces{
+.presentation__content__links{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -86,14 +94,14 @@ body{
     gap: 32px;
 }
 
-.presentacion__contenido__enlaces__texto{
+.presentation__content__links__text{
     font-family: var(--font-krona);
     font-size: 1.5rem;
     font-weight: 400;
     color: var(--color-secundary);
 }
 
-.presentacion__contenido__enlaces__link{
+.presentation__content__links__link{
     display: flex;
     justify-content: center;
     gap: 16px;
@@ -109,13 +117,85 @@ body{
     font-weight: 600;
 }
 
-.presentacion__contenido__enlaces__link:hover{
+.presentation__content__links__link:hover{
     background-color: var(--color-hover);
 }
 
-.foto__yo{
+.photo__of__mine{
     width: 30%;
 }
+
+.projects{
+    padding: 5% 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.projects__title{
+    font-size: 1.7 rem;
+    font-family: var(--font-krona);
+}
+
+.projects__list {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap onto the next row */
+    gap: 20px; /* Adds spacing between items */
+    justify-content: center; /* Centers items horizontally */
+}
+
+.projects__link {
+    position: relative; /* Required for positioning tooltip */
+    width: 300px;
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.3s;
+    text-decoration: none;
+    color: var(--color-secundary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.projects__link img {
+    width: 40%;
+    border-radius: 8px;
+}
+
+.projects__link:hover {
+    transform: scale(1.1);
+}
+
+/* Tooltip styling */
+.tooltip {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--color-primary);
+    color: var(--color-secundary);
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, bottom 0.3s;
+}
+
+/* Show tooltip on hover */
+.projects__link:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    bottom: -60px;
+}
+
+
+
 
 .footer{
     color: var(--color-primary);
@@ -135,16 +215,16 @@ body{
         justify-content: center;
     }
 
-    .presentacion{
+    .presentation{
         flex-direction: column-reverse;
         padding: 5%;
     }
 
-    .presentacion__contenido{
+    .presentation__content{
         width: auto;
     }
 
-    .foto__yo{
+    .photo__of__mine{
         width: 30%;
     }
 }

@@ -1,6 +1,4 @@
-<h1> Sistema de registro </h1>
--Estado del proyecto en construccion
+<h1> Portfolio </h1>
+-Agregar idiomas
 
-Para ejecutar el sistema debes poner:
-
-```npm install react```
+```HTML, CSS```
