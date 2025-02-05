@@ -147,16 +147,16 @@ body{
 }
 
 .projects__link {
+    display: flex;
     position: relative; /* Required for positioning tooltip */
-    width: 300px;
+    flex-direction: column;
     text-align: center;
+    align-items: center;
+    width: 300px;
     padding: 10px;
     transition: transform 0.3s;
     text-decoration: none;
     color: var(--color-secundary);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     gap: 8px;
 }
 
@@ -172,30 +172,29 @@ body{
 /* Tooltip styling */
 .tooltip {
     position: absolute;
-    top: 0px;
-    bottom: 0px;
+    top: 8px;
+    bottom: 6%;
     left: 50%;
     transform: translateX(-50%);
     background-color: var(--color-primary);
-    color: var(--color-secundary);
+    color: var(--color-secundary); /* Color text */
+    width: 234px;
     padding: 8px 12px;
-    border-radius: 6px;
     font-size: 0.9rem;
-    white-space: nowrap;
+    white-space: normal;
+    text-align: center;
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s, bottom 0.3s;
+    z-index: 10;
 }
 
 /* Show tooltip on hover */
 .projects__link:hover .tooltip {
     opacity: 1;
     visibility: visible;
-    bottom: -60px;
+    bottom: -120px;
 }
-
-
-
 
 .footer{
     color: var(--color-primary);
