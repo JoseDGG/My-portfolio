@@ -15,11 +15,10 @@
     margin: 0;
 }
 
-/* Buenas, esto es un comentario en css*/
-
 html{
     height: 100%;
 }
+
 body{
     box-sizing: border-box;
     background-color: var(--color-primary);
@@ -58,7 +57,7 @@ body{
 }
 
 .presentation__content{
-    padding: 0% 10%;
+    padding: 0% 5%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -84,6 +83,7 @@ body{
 .presentation__content__paragraph{
     font-family: var(--font-montserrat);
     font-size: 1.5rem;
+    text-align: justify;
 }
 
 .presentation__content__links{
@@ -135,9 +135,14 @@ body{
     gap: 80px;
 }
 
-h3{
+h2, h3{
     font-family: var(--font-krona);
     font-size: 1.5rem;
+}
+
+time{
+    font-family: var(--font-montserrat);
+    font-size: 1rem;
 }
 
 .projects__list {
@@ -210,6 +215,43 @@ h3{
     margin-top: auto;
 }
 
+.photo__of__mine__about{
+    width: 20%;
+    border-radius: 15%;
+}
+
+.presentation__job__experience{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 100px;
+    padding: 0% 5%;
+}
+
+.presentation__experience__content__title{
+    display: flex;
+    align-items: center;
+    font-family: var(--font-krona);
+    font-size: 2rem;
+}
+
+.experience__list{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.experience__content{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.experience__paragraph{
+    font-family: var(--font-montserrat);
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
 @media (max-width: 768px){
 
     .header{
@@ -239,7 +281,7 @@ h3{
     }
 
     .presentation__content__title{
-        font-size: 1.3rem;
+        font-size: 1.8rem;
     }
 
     .presentation__content__paragraph{
@@ -258,13 +300,55 @@ h3{
         width: 32%;
     }
 
-    @media (max-width: 768px){
+    .photo__of__mine__about{
+        width: 25%;
+    }
+
+    .presentation__job__experience{
+        flex-direction: column;
+    }
+    
+    .presentation__experience__content__title{
+        padding-top: 15%;
+        font-size: 1.8rem;
+        justify-content: center;
+    }
+
+    h3{
+        font-size: 1.2rem;
+    }
+
+    time{
+        font-size: 1rem;
+    }
+
+    .experience__paragraph{
+        font-size: 1rem;
+    }
+
+
+    @media (max-width: 425px){
 
         .presentation__content{
             justify-content: center;
             flex-direction: column;
-            padding: 0% 0%;
+            padding: 0% 5%;
             gap: 60px; 
+        }
+
+        .presentation__content__title{
+            font-size: 1.4rem;
+            text-align: center;
+        }
+
+        .presentation__content__paragraph{
+            text-align: justify;
+        }
+
+        .presentation__content__links__link{
+            width: 65%;
+            padding-top: 4%;
+            padding-bottom: 4%;
         }
 
         .main__info{
@@ -272,7 +356,27 @@ h3{
         }
 
         .photo__of__mine{
+            width: 40%;
             border-radius: 10%;;
+        }
+
+        .photo__of__mine__about{
+            width: 40%;
+            border-radius: 10%;;
+        }
+
+        .presentation__experience__content__title{
+            font-size: 1.4rem;
+            justify-content: center;
+            padding-top: 2%;
+        }
+
+        .presentation__job__experience{
+            gap: 60px;
+        }
+
+        .experience__list{
+            gap: 50px;
         }
 
         .projects__title{
